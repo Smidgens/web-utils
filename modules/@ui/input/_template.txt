@@ -1,0 +1,23 @@
+import React, { FC } from "react";
+import styled from "styled-components";
+
+
+interface IProps extends React.AllHTMLAttributes<HTMLInputElement> {
+
+}
+
+
+export const URLInput:FC<IProps> = props => {
+	
+
+	return (
+		<StyledInput
+		
+		/>
+	);
+};
+
+const StyledInput = styled.input`
+
+
+`;

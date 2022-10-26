@@ -1,1 +1,1 @@
-export default {};
+export { default as sprites } from "./images.json";

@@ -1,5 +1,8 @@
 import { createGlobalStyle, css } from "styled-components";
 import * as FontFamilies from "#fonts";
+import { bootstrap } from "./bootstrap";
+import "./button.css";
+import "./input.css";
 
 const getFontCSS = (name:string, url:string) => {
 	return css`
@@ -25,6 +28,9 @@ const fonts = css`
 `;
 
 export const GlobalStyles = createGlobalStyle`
+
+	${bootstrap};
+
 	body {
 		margin: 0;
 		${fonts};

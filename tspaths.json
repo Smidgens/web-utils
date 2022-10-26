@@ -9,6 +9,8 @@
 			"$types": ["./src/types"],
 			"$api": ["./src/api"],
 			"$resources": ["./src/resources"],
+			"$errors": ["./src/errors"],
+			"$tools": ["./src/tools"],
 			"#fonts": ["./fonts"],
 			"#content":[ "./content" ],
 			"@ui": ["./modules/@ui"],

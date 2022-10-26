@@ -1,0 +1,19 @@
+
+/*
+TODO:
+	- sizes
+	- groups
+*/
+
+input {
+	width:100%;
+	border-radius: 0.25em;
+	padding:0.5em;
+	background:#fff;
+	border:1px solid #0005;
+	cursor:default;
+}
+
+input:read-only {
+	background:#eee;
+}

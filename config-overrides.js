@@ -21,6 +21,8 @@ const aliasFn = {
 	"pages",
 	"theme",
 	"resources",
+	"errors",
+	"tools",
 ].forEach(aliasFn.srcModule);
 
 // ./#<name>

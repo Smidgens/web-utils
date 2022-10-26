@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styled, { css } from "styled-components";
+import styled, { css, CSSProperties } from "styled-components";
 import { Box } from "../layout";
 
 import {
@@ -16,6 +16,21 @@ const clampPixelOffset = (v:number|undefined, imgSize:number) => {
 };
 
 export class Sprite {
+	static getTiledBackgroundBox(props:TiledBGOptions){
+		const c:FC<{
+			cols?:number;
+			className?:string;
+			style?:CSSProperties;
+			children?:React.ReactNode;
+		}> = props => {
+			return (
+				<TiledRoot className={ props.className} style={ props.style }>
+					{ props.children }
+				</TiledRoot>
+			);
+		};
+		return c;
+	}
 
 	static getMany(props:ManyOptions):SpriteComponent[]{
 		const atlas = props.atlas;

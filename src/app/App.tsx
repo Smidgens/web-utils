@@ -2,25 +2,32 @@ import { FC } from "react";
 import styled from "styled-components";
 import { Box } from "@ui";
 
-class QueryUtils {
-	static getNumber = (p:URLSearchParams, key:string, d:number):number => {
-		const v = p.get(key);
-		if(!v){ return d; }
-		var pv = Number(v);
-		if(Number.isNaN(pv)){ return d; }
-		return pv;
-	};
-	private constructor(){}
-}
-
+import { PageView } from "./PageView";
 export const App:FC = () => {
-
+	
 	return (
 		<Root>
+			<PageView/>
 		</Root>
 	);
 };
 
 const Root = styled(Box.Abs)`
 	overflow:hidden;
+	display:flex;
+`;
+
+const VDivider = styled.div`
+	width:2px;
+	background:#fff;
+	height:100%;
+`;
+
+const SidebarColumn = styled.div`
+	overflow:visible;
+`;
+
+const ViewportColumn = styled.div`
+	flex:1 1;
+	background:#323537;
 `;

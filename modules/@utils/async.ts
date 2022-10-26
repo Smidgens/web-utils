@@ -1,3 +1,5 @@
+// smidgens @ github
+
 export class Async {
 	static async catch(fn:() => Promise<any>, then?:(err:Error|null) => any){
 		let err:any = null;

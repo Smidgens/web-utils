@@ -13,3 +13,9 @@ export type AtlasOptions = {
 };
 
 export type Vector2D = { x:number; y:number; }
+
+export type SpriteSheetManifest = {
+	image:string;
+	size:number;
+	items:Record<string,number[]>;
+};

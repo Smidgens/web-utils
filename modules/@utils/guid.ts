@@ -1,7 +1,11 @@
+// smidgens @ github
+
+// guid generator
 export class GUID {
-	static getGUID(){
-		return SN(8);
-	}
+
+	// generate new guid string
+	static getGUID = () => SN(8);
+
 	private constructor(){}
 }
 

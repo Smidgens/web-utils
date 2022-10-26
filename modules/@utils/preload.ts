@@ -1,7 +1,11 @@
-const MAX_TIMEOUT = 5; // 10seconds
-const MIN_TIMEOUT = 1; // 10seconds
+// smidgens @ github
 
-export class AssetPreload {
+// allowed timeout range (seconds)
+const MAX_TIMEOUT = 5;
+const MIN_TIMEOUT = 1;
+
+// utility for preloading assets
+export class Preload {
 	static async images(paths:string[], timeout:number = MAX_TIMEOUT){
 		if(timeout < MIN_TIMEOUT){ timeout = MIN_TIMEOUT; }
 		else if(timeout > MAX_TIMEOUT){ timeout = MAX_TIMEOUT; }
